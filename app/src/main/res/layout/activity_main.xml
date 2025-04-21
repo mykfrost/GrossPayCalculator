@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TVTitle"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_margin="16dp"
+        android:text="Gross Pay Calculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/TVpayRate"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAlignment="textStart"
+        android:layout_margin="16dp"
+        android:text="Pay Rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/edPayRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Enter Pay Rate Per Hour"
+        android:inputType="number" />
+    <TextView
+        android:id="@+id/TVHours"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAlignment="textStart"
+        android:layout_margin="16dp"
+        android:text="Hours Worked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:inputType="number"
+        android:layout_margin="16dp"
+        android:hint="Enter Hours Worked"
+        android:id="@+id/edHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/tvGrossPay"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAlignment="textStart"
+        android:layout_margin="16dp"
+        android:text="Gross Pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:textStyle="bold"
+        android:inputType="numberDecimal"
+        android:layout_margin="16dp"
+        android:id="@+id/TVPay"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/caluclate"
+        android:layout_gravity="center_horizontal"
+        android:text="Calculate Gross Pay"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
